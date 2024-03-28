@@ -1,0 +1,91 @@
+/* Títulos */ 
+.titulo {
+    font-family: 'Anton', sans-serif;  
+    color: #7C7C7C;  
+    font-size: 2.5rem;
+    line-height: 3.7rem;
+    margin: 0;
+}
+
+button.btn.btn-success, .cadAgendamentoModal .btn-success  {
+    padding: 0.625rem 1.25rem;
+    background-color: #035950;
+    color: #fff;    
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+button.btn.btn-success:hover, .custom-btn:hover {
+    background-color: #00917C;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Histórico de agendamentos */ 
+.listar-agendamentos {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Modal do agendamento */ 
+/* Estilização do checkbox personalizado */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 2.25rem;
+    margin-bottom: 0.75rem;  
+    font-size: 1rem; 
+    user-select: none;
+}
+
+/* Esconde o checkbox padrão */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Estilo do checkbox personalizado */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #EFECEC;
+}
+
+.container:hover input~.checkmark {
+    background-color: #00917C;
+}
+
+.container input:checked~.checkmark {
+    background-color: #035950;
+}
+
+/* Estilo do checkbox quando está marcado */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 0.5rem;
+    top: 0.25rem;    
+    width: 0.5rem;
+    height: 0.8rem;
+    border: solid white;
+    border-width: 0 0.188rem 0.188rem 0;
+    transform: rotate(45deg);
+}
+
+

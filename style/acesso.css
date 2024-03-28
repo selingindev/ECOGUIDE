@@ -1,0 +1,217 @@
+
+/* Plano de fundo */
+body {
+    background-color: #EFECEC;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3; 
+}
+
+
+/* Apresentação do site */
+.box-principal {
+    width: 90%;
+    padding: 4%;
+    margin: 5% auto;
+    z-index: 1;
+}
+
+.conteudo-principal {    
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+}
+
+
+/* Informações breves */
+.conteudo-textual {
+    display: flex;
+    flex-direction: column;
+    margin: 0%; 
+    gap: 0.5rem;
+}
+
+.conteudo-logo {
+    height: 6rem;
+    width: 30rem;
+}
+
+.conteudo-titulo { 
+    font-family: 'Anton', sans-serif;    
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #7C7C7C;
+    margin: 0;
+}
+
+.conteudo-texto {
+    font-family: 'Poppins', sans-serif;       
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #035950;
+    margin: 0;
+}
+
+
+/* Itens do formulário */ 
+.conteudo-forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;     
+}
+
+.titulo-acesso { 
+    font-family: 'Anton', sans-serif;    
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    color: #EFECEC;
+    margin: 0 0 0.7rem 0;
+}
+
+form {
+    background-color: #035950;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7%;
+    padding: 3rem;
+    border-radius: 2rem 0;
+}
+
+
+label {
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #EFECEC;
+    align-self: start;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 0.5rem;
+    height: 1rem;
+    width: 17.75rem;    
+    border-radius: 	0.25rem;
+    border: 0.1rem solid #EFECEC;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover,
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
+{
+    outline: none;
+}
+
+.button-acesso {
+    background-color: #00917C;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+    height: 2.5rem; 
+    width: 18.75rem;
+    color: #EFECEC;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.25rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+button:hover{
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.3);
+}
+
+.button-acesso:focus {
+    outline: none;
+}
+
+
+/* Link de redirecionamento */
+.redefinicao-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirecionamento, .redirecionamento a {
+    margin-top: 0.938rem;
+    margin-bottom: 0;   
+    color: #EFECEC;
+    font-size: 0.9rem;  
+}
+
+.redirecionamento-redefinicao-senha, .redirecionamento-redefinicao-senha a {
+    margin: 1rem;
+    color: #035950;
+    font-size: 1.2rem;      
+}
+
+.redirecionamento, .redirecionamento a, .redirecionamento-redefinicao-senha, .redirecionamento-redefinicao-senha a {
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: underline;
+}
+
+.redirecionamento a:hover, .redirecionamento-redefinicao-senha a:hover{
+    color: #00917C;
+    text-decoration: underline;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.2);
+}
+
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+.box-principal {
+    width: 90%;
+    padding: 2%;
+    margin: 5% auto;
+}
+
+.conteudo-principal {
+    flex-direction: column;
+    height: auto;
+    padding: 0 1rem;
+    margin-left: 10%;
+}  
+
+.conteudo-logo {
+    height: 5rem;
+    width: 25rem;
+}
+
+.conteudo-titulo {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.conteudo-texto {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+form {
+    padding: 2.25rem;
+    margin: 2rem 0 0 0;
+}
+}

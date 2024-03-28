@@ -1,0 +1,347 @@
+/* Body */
+body {
+    background-color: #EFECEC;
+    margin: 0;
+}
+
+/* Cabeçalho do site */
+.cabecalho {
+    background-color: #035950;
+}
+
+.cabecalho-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+    margin: 0% 1%;
+}
+
+.cabecalho-img {
+    height: 4rem;
+}
+
+.cabecalho-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.cabecalho-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.nome-user {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem;
+    color: #EFECEC;
+    margin: 0;
+}
+
+/* logout */
+.logout-img {
+    height: 2rem; 
+    margin-left: 4%;
+}
+
+
+/* Itens gerais da homepage */
+.home-titulo-a, .home-titulo-b {
+    font-family: 'Anton', sans-serif;    
+    font-size: 3rem;
+    line-height: 3.7rem;
+    margin: 0;
+}
+
+.home-titulo-a {
+    color: #7C7C7C;
+}
+
+.home-titulo-b {
+    color: #EFECEC;
+}
+
+.home-texto-a, .home-texto-b {
+    font-family: 'Poppins', sans-serif;       
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.home-texto-a {
+    color: #035950;
+}
+
+.home-texto-b {
+    color: #EFECEC;
+}
+
+.introducao, .vantagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* Introdução */
+.introducao {
+    padding: 2% 0% 2% 6%;
+    margin: 2%;
+}
+
+.home-conteudo-introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    background-color: #035950;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    margin: 1% 0 1% 0;
+}
+  
+.button:hover {
+    background-color: #00917C;
+    color: #fff;
+    text-decoration: none;
+}
+
+.img-intro {
+    height: 26rem;
+    margin: 2%;
+}
+
+
+/* Vantagens */
+.vantagens {
+    padding: 1% 6%;
+    margin: 0%;
+    background-color: #035950;
+}
+
+.home-conteudo-vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1% 1% 1% 4%;
+}
+
+.img-descarte {
+    height: 40rem;
+    margin: 2% 1% 0% 3%;
+}
+
+.item-vantagens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.img-check {
+    height: 5rem;
+}
+
+
+/* ODS */
+.container-ods {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 5% 0%;
+}
+
+.informacoes-ods {
+    align-self: flex-start;
+    margin: 1%;
+}
+
+.img-ods {
+    height: 17rem;
+}
+
+
+/* Frase final */
+.frase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0% 6%;
+}
+
+.img-cidade {
+    margin: 2% 1% 0% 0%;
+    height: 32rem;
+}
+
+/* Footer */
+.footer-img {
+    height: 3rem;
+}
+
+.down {
+    position: relative;
+    width: 100%;
+    background: #035950;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.down-menu {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+}
+
+.down-menu li {
+    list-style: none;
+}
+  
+.down-menu li a {
+    font-size: 1.2em;
+    color: #ccc;
+    margin: 0 1rem;
+    display: inline;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+}
+  
+.down-menu li a:hover {
+    opacity: 1;
+    color: #EFECEC;
+ }
+
+/* Estilização copyrights */
+.copy {
+    color: #EFECEC !important;
+}
+
+/* Animação ondas */
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; 
+    min-height:100px;
+    max-height:150px;
+  }
+  
+.content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: #035950;
+}
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% { 
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+}
+
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+.home-titulo-a, .home-titulo-b {
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.home-texto-a, .home-texto-b {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+
+.introducao, .vantagens {    
+    align-items: center; 
+}
+
+.introducao {
+    flex-direction: column;
+    margin: 4%;
+}
+
+.vantagens {
+    flex-direction: column-reverse;
+    padding-top: 5%;
+}
+
+.frase { 
+    padding: 0% 3%;
+}
+
+
+.img-intro {
+    height: 22rem;
+}
+
+.img-descarte {
+    height: 30rem;
+}
+
+.img-ods {
+    height: 16rem;
+}
+
+.img-cidade {
+    height: 23rem;
+}
+
+}

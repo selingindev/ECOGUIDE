@@ -1,0 +1,37 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+/* Seleção de texto */
+::selection {
+    color: #EFECEC;
+    background: #00917C; 
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 0.8rem;    
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #035950;
+    border: 0.1rem solid #EFECEC;
+    border-radius: 1rem;
+}
+  
+  ::-webkit-scrollbar-track {
+    background-color: #EFECEC;
+}
+
+/* Estilização copyrights */
+.copy {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.7rem;
+  margin: 0;
+  color: #035950;
+}

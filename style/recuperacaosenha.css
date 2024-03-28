@@ -1,0 +1,144 @@
+/* Plano de fundo */
+body {
+    background-color: #EFECEC;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3; 
+}
+
+
+/* Formulário */
+.conteudo-principal {    
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+}
+
+.conteudo-logo {
+    height: 5rem;
+    width: 25rem;
+    margin: 1%;
+}
+
+.titulo-acesso { 
+    font-family: 'Anton', sans-serif;    
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    color: #EFECEC;
+    margin: 0 0 0.7rem 0;
+}
+
+form {
+    background-color: #035950;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2rem 0;
+}
+
+.label-acesso {
+    font-family: 'Poppins', sans-serif;    
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #EFECEC;
+    align-self: center;
+    padding-bottom: 0.2rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 17rem;    
+    border-radius: 	0.25rem;
+    border: 0.1rem solid #EFECEC;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover,
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
+{
+    outline: none;
+}
+
+.button-acesso {
+    background-color: #00917C;
+    border: none;
+    border-radius: 0.25rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+    height: 2.5rem; 
+    width: 18.1rem;
+    color: #EFECEC;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.25rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+button:hover{
+	box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.3);
+}
+
+.button-acesso:focus {
+    outline: none;
+}
+
+
+/* Link de redirecionamento */
+.redirecionamento, .redirecionamento a {
+    margin-top: 0.938rem; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem;
+    color: #EFECEC;
+    text-decoration: underline;
+}
+
+.redirecionamento a:hover{
+    color: #00917C;
+    text-decoration: underline;
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.2);
+}
+
+
+/* Estilização copyrights */
+.copy {
+    color: #035950;
+}
+
+
+/* Adaptação para telas menores */
+@media (max-width: 768px) {
+.conteudo-logo {
+    margin-top: 20%;
+    margin-bottom: 0;
+}
+
+form {
+    padding: 2.25rem;
+    margin: 2rem 0 0 0;
+}
+
+.copy {
+    position: fixed;
+}
+}

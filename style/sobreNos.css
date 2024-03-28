@@ -1,0 +1,70 @@
+/* Itens gerais */
+
+.inicio, .podio, .reinventando, .participacao, .futuro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0% 2% 0% 2%;
+}
+
+.inicio {
+    padding: 2% 5% 2% 5%;
+}
+
+.sobre-conteudo-inicio, .sobre-conteudo-podio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Bloco - Como tudo começou*/
+.sobre-conteudo-inicio {
+    padding: 1% 1% 1% 4%;
+}
+
+.img-inicio {
+    height: 35rem;
+    margin: 2% 1% 0% 3%;
+}
+
+/* Bloco - A conquista do pódio */
+.podio {
+    padding: 2% 0% 2% 6%;
+}
+
+.img-podio {
+    height: 26rem;
+    margin: 2%;
+}
+
+/* Bloco - Reinventando Ecoguide */
+.sobre-conteudo-reinventando {
+    padding: 1% 5% 1% 2%;
+}
+
+.img-reinventando {
+    height: 26rem;
+    margin: 2% 1% 0% 3%;
+}
+
+/* Bloco - Participação na #CPBR15 */
+.participacao {
+    padding: 2% 5% 2% 6%;
+}
+
+.img-participacao {
+    height: 26rem;
+    margin: 2%;
+}
+
+/*Bloco -Junte-se a nós */
+.sobre-conteudo-futuro {
+    padding: 1% 5% 1% 2%;
+}
+
+.img-futuro {
+    height: 26rem;
+    margin: 2% 1% 0% 3%;
+}
